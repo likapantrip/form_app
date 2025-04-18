@@ -1,0 +1,6 @@
+<h1>一覧</h1>
+
+<% @posts.each do |p| %>
+  投稿日時：<%= p.created_at %><br>
+  投稿内容：<%= p.content %><br><br>
+<% end %>
