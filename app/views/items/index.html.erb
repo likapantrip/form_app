@@ -2,5 +2,6 @@
 
 <% @items.each do |i| %>
   商品名：<%= i.name %><br>
-  金額：<%= i.price %><br><br>
+  金額：<%= i.price %><br>
+  <%= link_to '編集ページへ移動', edit_item_path(i.id) %><br><br>
 <% end %>
